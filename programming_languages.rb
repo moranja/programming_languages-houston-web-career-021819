@@ -17,9 +17,10 @@ def reformat_languages(languages)
     language_type = type
     language.each do |lang, info|
       reformatted_hash.each do |lang_r, info_r|
-        binding.pry
+        #binding.pry
         if lang_r == lang
-          info_r.each do |key, value|
+          #binding.pry
+          info.each do |key, value|
             new_hash = {key => value, :style => language_type}
             new_hash[key] = value
             new_hash[:style] = language_type
